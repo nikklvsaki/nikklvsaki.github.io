@@ -1,0 +1,121 @@
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 97vh;
+}
+
+
+
+.body-backround {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.body-backround-black {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    opacity: 40%;
+
+}
+
+.embed-blanco{
+    background-color: white;
+    position: fixed;
+    width: 67%;
+    height: 70vh;
+    object-fit: cover;
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.navegador{
+ margin: 20px 0px 0px 20px;
+ width: 45%;
+ height: 10vh;
+
+ display: flex;
+ flex-direction:row;
+}
+.ul-nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /*background-color: chocolate;*/
+    height: auto;
+    justify-content: space-evenly;
+    padding-left: 0;
+    list-style: none;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.ul-nav a{
+    text-decoration: none;
+    color: black;
+}
+
+.navegador a {
+    text-decoration: none;
+    white-space: nowrap;
+    position: relative;
+    
+    
+}
+
+.navegador a::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: -0.1em;
+    right: -0.1em;
+    top: 66%;
+    height: 34%;
+    transition: top 0.2s cubic-bezier(0, 0.8, 0.13, 1);
+    
+    border-radius: 0.1rem;
+    animation: pepito 5s infinite;
+    
+}
+@keyframes pepito {
+   0% {background-color: rgb(255, 110, 153);}
+    16.67%  {background-color: rgb(252, 71, 71);}
+    33.34%  {background-color: rgb(255, 255, 110);}
+    50.01%  {background-color: rgb(161, 249, 161);}
+    66.68% {background-color: rgb(153, 132, 255);}
+    83.35% {background-color: rgb(196, 134, 255);}
+   100%   {background-color: rgb(255, 123, 233);}
+}
+
+@keyframes pepita {
+    0% {background-color: rgb(255, 40, 105);}
+     16.67%  {background-color: rgb(255, 23, 23);}
+     33.34%  {background-color: rgb(255, 255, 42);}
+     50.01%  {background-color: rgb(95, 255, 95);}
+     66.68% {background-color: rgb(92, 60, 255);}
+     83.35% {background-color: rgb(156, 50, 255);}
+    100%   {background-color: rgb(255, 52, 221);}
+ }
+.navegador a:hover {
+    cursor: pointer;
+}
+
+.navegador a:hover::after {
+    top: 0%;
+    height: 90%;
+}

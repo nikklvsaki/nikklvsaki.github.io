@@ -1,0 +1,136 @@
+.text-home {
+
+    width: 50%;
+    height: 50vh;
+    text-align: justify;
+    position: absolute;
+
+}
+
+.imagen {
+    /*background-color: brown;*/
+    width: 50%;
+    height: 50vh;
+    overflow: visible;
+
+
+}
+
+.mio-guit {
+    position: absolute;
+    top: -40px;
+    right: -15px;
+    width: 53%;
+    height: auto;
+    z-index: 1;
+}
+
+.column-container {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    height: 70vh;
+    border-radius: 3rem;
+
+}
+
+.desc {
+    padding-left: 5%;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: larger;
+}
+
+.flor {
+    position: absolute;
+    bottom: -160px;
+    right: -520px;
+    z-index: -1;
+    overflow: hidden;
+    width: 120%;
+    height: auto;
+    animation: spin 10s linear infinite;
+
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.flor-cont {
+
+
+    position: relative;
+    width: 50%;
+    height: auto;
+    z-index: -1;
+}
+
+.nikk {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin-left: 63%;
+    margin-top: -11%;
+    font-weight: 700;
+    font-size: x-large;
+    
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: pepita 5s infinite;
+    text-shadow: 2px 2px #000000;
+    opacity: 90%;
+}
+
+.cat {
+    padding-left: 10%;
+    margin-top: -4%;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kitty {
+    margin-left: 43%;
+    margin-top: 0%;
+    width: 20%;
+    height: auto;
+}
+
+.s {
+
+    margin-left: 7.5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: larger;
+
+
+}
+
+.caja {
+    margin-left: 5%;
+    background-color: white;
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 1rem;
+}
+
+.pop {
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: medium;
+    margin-left: 8%;
+    margin-right: 4%;
+}
